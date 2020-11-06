@@ -1,0 +1,526 @@
+fileFormatVersion: 2
+guid: 86dd2ef7fd41460479e936a5541ebed0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6831643058587474907
+    second: move2
+  - first:
+      213: -6878223673115418339
+    second: idle1
+  - first:
+      213: -2908824616449574812
+    second: inv2
+  - first:
+      213: 4368837481765033866
+    second: idle2
+  - first:
+      213: 4217902239951383862
+    second: move3
+  - first:
+      213: 262317712921216971
+    second: move4
+  - first:
+      213: -7013466305638692332
+    second: move5
+  - first:
+      213: 3280649130779740078
+    second: crouch1
+  - first:
+      213: 340826181115535473
+    second: crouch2
+  - first:
+      213: -6741077670533033036
+    second: crouch3
+  - first:
+      213: 2066086080092255605
+    second: open1
+  - first:
+      213: 5341488395449578793
+    second: open2
+  - first:
+      213: -6622516392392938117
+    second: bonhomme_animations_v01_12
+  - first:
+      213: -8871519960230513029
+    second: bonhomme_animations_v01_13
+  - first:
+      213: 2274193955026936900
+    second: bonhomme_animations_v01_14
+  - first:
+      213: 4696684231806606478
+    second: bonhomme_animations_v01_15
+  - first:
+      213: 51984692523931927
+    second: bonhomme_animations_v01_16
+  - first:
+      213: 2166666700856432904
+    second: bonhomme_animations_v01_17
+  - first:
+      213: -4131199778513638165
+    second: move1
+  - first:
+      213: 2760708536627714554
+    second: bonhomme_animations_v01_19
+  - first:
+      213: 901242731448329515
+    second: bonhomme_animations_v01_20
+  - first:
+      213: 6817805513013255614
+    second: bonhomme_animations_v01_21
+  - first:
+      213: -7515915285556158510
+    second: bonhomme_animations_v01_22
+  - first:
+      213: 6968541161721603377
+    second: bonhomme_animations_v01_23
+  - first:
+      213: 7675802998909001045
+    second: bonhomme_animations_v01_24
+  - first:
+      213: 5604555058757028168
+    second: bonhomme_animations_v01_25
+  - first:
+      213: -4727664271476159777
+    second: bonhomme_animations_v01_26
+  - first:
+      213: 1834821758243237433
+    second: bonhomme_animations_v01_27
+  - first:
+      213: 8074958442685828611
+    second: bonhomme_animations_v01_28
+  - first:
+      213: 4659658720379581549
+    second: bonhomme_animations_v01_29
+  - first:
+      213: 4255843605819098192
+    second: bonhomme_animations_v01_30
+  - first:
+      213: -8445354074814066474
+    second: bonhomme_animations_v01_31
+  - first:
+      213: -4969454808065815373
+    second: bonhomme_animations_v01_32
+  - first:
+      213: -4217234296080199447
+    second: inv1
+  - first:
+      213: -4488313563556449292
+    second: bonhomme_animations_v01_34
+  - first:
+      213: 6439028129259670962
+    second: bonhomme_animations_v01_35
+  - first:
+      213: 9117574545575621967
+    second: bonhomme_animations_v01_36
+  - first:
+      213: 6240630126011583460
+    second: bonhomme_animations_v01_37
+  - first:
+      213: -588739444101589179
+    second: bonhomme_animations_v01_38
+  - first:
+      213: -4623427622103252566
+    second: bonhomme_animations_v01_39
+  - first:
+      213: 3848960359253773318
+    second: bonhomme_animations_v01_40
+  - first:
+      213: -5764246326110755146
+    second: bonhomme_animations_v01_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 327
+        width: 14
+        height: 33
+      alignment: 9
+      pivot: {x: 3, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11e54ef204ab80a0800000000000000
+      internalID: -6878223673115418339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inv2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 263
+        width: 13
+        height: 33
+      alignment: 9
+      pivot: {x: 3, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4687c964c67c1a7d0800000000000000
+      internalID: -2908824616449574812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 327
+        width: 15
+        height: 33
+      alignment: 9
+      pivot: {x: 3, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a875406ea8a31ac30800000000000000
+      internalID: 4368837481765033866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 327
+        width: 16
+        height: 33
+      alignment: 9
+      pivot: {x: 3, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beca58180b70ba6c0800000000000000
+      internalID: -4131199778513638165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inv1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 263
+        width: 15
+        height: 33
+      alignment: 9
+      pivot: {x: 3, y: 10}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e09b8760cf5975c0800000000000000
+      internalID: -4217234296080199447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 327
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52461a475d02131a0800000000000000
+      internalID: -6831643058587474907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 327
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d60a56dbff88a30800000000000000
+      internalID: 4217902239951383862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 327
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc746f0f190f3a300800000000000000
+      internalID: 262317712921216971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 327
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a0c30dd892bae90800000000000000
+      internalID: -7013466305638692332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 327
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea702d8b005378d20800000000000000
+      internalID: 3280649130779740078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 327
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1706b8f1b9bdab400800000000000000
+      internalID: 340826181115535473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crouch3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 327
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b39f8c0391e272a0800000000000000
+      internalID: -6741077670533033036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: open1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 327
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575374fd7563cac10800000000000000
+      internalID: 2066086080092255605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: open2
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 327
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925b4ae2567c02a40800000000000000
+      internalID: 5341488395449578793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
