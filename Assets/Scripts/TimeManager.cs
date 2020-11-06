@@ -5,24 +5,30 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    private int time = 0;
+    private int gameTime = 0;
     private float currentTime;
 
     [SerializeField] private float Time1Hour = 5;
     [SerializeField] private float Time13thHour = 30;
+
+    public int GameTime
+    {
+        get { return gameTime; }
+    }
+
     void Start()
     {
-        time = 0;
+        gameTime = 0;
     }
 
     void FixedUpdate()
     {
         currentTime += Time.deltaTime;
-        if (time >= 13)
+        if (gameTime >= 13)
         {
             if (currentTime > Time13thHour)
             {
-                time = 0;
+                gameTime = 0;
                 currentTime -= Time13thHour;
             }
         }
@@ -31,7 +37,7 @@ public class TimeManager : MonoBehaviour
             
             if (currentTime > Time1Hour)
             {
-                time += 1;
+                gameTime += 1;
                 currentTime -= Time1Hour;
             }
         }
