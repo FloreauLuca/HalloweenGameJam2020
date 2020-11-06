@@ -164,6 +164,7 @@ public class Ghost : MonoBehaviour
             case GhostBehaviour.DISAPEARING:
                 ghostRigidbody2D.velocity = Vector2.zero;
                 ghostSprite.SetActive(false);
+                ghostBehaviour = GhostBehaviour.SLEEPING;
                 break;
         }
     }
