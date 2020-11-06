@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    private int gameTime = 0;
+    [SerializeField] private int gameTime = 0;
     private float currentTime;
 
     [SerializeField] private float Time1Hour = 5;
