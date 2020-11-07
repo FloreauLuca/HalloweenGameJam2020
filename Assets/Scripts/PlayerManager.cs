@@ -4,14 +4,37 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    float movementSpeed = 3;
-    void Start()
+    public float Speed;
+
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+
+    private void Awake()
     {
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
-        var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
+        float horizontal = Input.GetAxis("Horizontal");
+        Vector3 movement = Vector2.right * (horizontal * Speed * Time.deltaTime);
+
+
+        transform.Translate(movement);
+
+        if (horizontal > 0)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (horizontal < 0)
+        {
+            _spriteRenderer.flipX = true;
+        }
+
+            _animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        _animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
+ 
     }
+
 }
