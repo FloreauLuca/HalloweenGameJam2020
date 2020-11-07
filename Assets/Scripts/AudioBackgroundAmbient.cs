@@ -7,8 +7,10 @@ public class AudioBackgroundAmbient : MonoBehaviour
     [SerializeField] private AudioClip ticTac;
     [SerializeField] private AudioClip darkAmbient;
     [SerializeField] private AudioClip piano;
+    [SerializeField] private AudioClip boom;
     [SerializeField] private AudioSource backgroundAmbientSource;
     [SerializeField] private AudioSource pianoSource;
+    [SerializeField] private AudioSource boomSource;
     [SerializeField] private TimeManager timeManager;
 
     [SerializeField] private float timeBeforeEndToLaunchPiano = 12f;
@@ -37,6 +39,8 @@ public class AudioBackgroundAmbient : MonoBehaviour
             backgroundAmbientSource.clip = darkAmbient;
             backgroundAmbientSource.loop = true;
             backgroundAmbientSource.Play();
+            boomSource.clip = boom;
+            boomSource.Play();
             is13th = true;
         }
 
