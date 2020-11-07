@@ -8,12 +8,27 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private int gameTime = 0;
     private float currentTime;
 
-    [SerializeField] private float Time1Hour = 5;
-    [SerializeField] private float Time13thHour = 30;
+    [SerializeField] private float time1Hour = 5;
+    [SerializeField] private float time13thHour = 30;
 
     public int GameTime
     {
         get { return gameTime; }
+    }
+
+    public float CurrentTime
+    {
+        get { return currentTime; }
+    }
+
+    public float Time1Hour
+    {
+        get { return time1Hour; }
+    }
+
+    public float Time13thHour
+    {
+        get { return time13thHour; }
     }
 
     void Start()
