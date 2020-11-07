@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public float Speed;
+    public bool isHidden;
 
     private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
+    public SpriteRenderer _spriteRenderer;
+    //private readonly List<IInteractable> _interactables = new List<IInteractable>();
 
     private void Awake()
     {
@@ -25,16 +27,24 @@ public class PlayerManager : MonoBehaviour
 
         if (horizontal > 0)
         {
-            _spriteRenderer.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (horizontal < 0)
         {
-            _spriteRenderer.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
-            _animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        _animator.SetFloat("Speed", Mathf.Abs(horizontal));
         _animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
+        _animator.SetBool("isInventory", Input.GetKey(KeyCode.Q) && horizontal == 0);
+        _animator.SetBool("isOpen", Input.GetKey(KeyCode.W) && horizontal == 0);
+        _animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
  
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        
     }
 
 }
