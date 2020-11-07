@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2568075349
+    locked: 0
+  - name: Backward
+    uniqueID: 4277500729
+    locked: 0
   - name: Interactable
     uniqueID: 672957345
     locked: 0
   - name: Character
     uniqueID: 541831049
+    locked: 0
+  - name: Forward
+    uniqueID: 1993242933
     locked: 0

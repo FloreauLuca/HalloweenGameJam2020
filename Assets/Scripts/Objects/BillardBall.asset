@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc31875dce726904faf7650dda72ddde, type: 3}
-  m_Name: Key
+  m_Name: BillardBall
   m_EditorClassIdentifier: 
   inventoryPrefab: {fileID: 6997735990428573870, guid: 648c243cc4b1fa14795cbcac97318da0, type: 3}
-  inventorySprite: {fileID: 3689613447281502264, guid: 8a1fadb816ae828438e83a4bc0de60c2, type: 3}
-  name: Key
+  inventorySprite: {fileID: -3400685484829150885, guid: 8a1fadb816ae828438e83a4bc0de60c2, type: 3}
+  name: BillardBall
