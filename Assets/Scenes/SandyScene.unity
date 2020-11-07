@@ -340,7 +340,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -364,8 +364,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580318604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09390987, y: -0.4523554, z: -10}
-  m_LocalScale: {x: 0.18781973, y: 0.21337521, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1623656580}
   m_RootOrder: 0
@@ -839,8 +839,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 541831049
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -3981103664978749857, guid: 265b1b31f0d600f4094d7cd9d0a0c6fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -880,7 +880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb18e6f806427e47a5e2f5f84804afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1.5
+  Speed: 0.5
+  isHidden: 0
   _spriteRenderer: {fileID: 0}
 --- !u!114 &1623656582
 MonoBehaviour:
