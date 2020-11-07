@@ -5,16 +5,20 @@ using UnityEngine;
 public class QuestFurniture : Furniture
 {
     [SerializeField] protected SOObject requestObject;
+    protected bool used = false;
 
     public override void OpenFurniture()
     {
-        if (player.RemoveObject(requestObject))
+        Debug.Log("No object here already found.");
+    }
+
+    public override void UseAnObject(SOObject obj)
+    {
+        if (!used && obj.Name == requestObject.Name)
         {
-            Debug.Log("You unlocke something");
-        }
-        else
-        {
-            Debug.Log("You need a " + requestObject.Name);
+            used = false;
+            Debug.Log("Something is happening");
+            player.RemoveObject(obj);
         }
     }
 }

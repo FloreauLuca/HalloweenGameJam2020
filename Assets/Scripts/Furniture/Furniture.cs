@@ -17,6 +17,10 @@ public class Furniture : MonoBehaviour
     {
     }
 
+    public virtual void UseAnObject(SOObject obj)
+    {
+    }
+
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player"))
         {

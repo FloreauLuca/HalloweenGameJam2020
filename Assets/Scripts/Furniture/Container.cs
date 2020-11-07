@@ -20,4 +20,9 @@ public class Container : Furniture
             Debug.Log(objectContained.Name + " already found.");
         }
     }
+
+    public override void UseAnObject(SOObject obj)
+    {
+        Debug.Log("Not object can be use");
+    }
 }

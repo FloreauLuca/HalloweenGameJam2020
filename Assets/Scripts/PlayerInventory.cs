@@ -41,10 +41,22 @@ public class PlayerInventory : MonoBehaviour
         
     }
 
+    public void UseAnObject(SOObject obj)
+    {
+        if (reachableFurniture != null)
+        {
+            reachableFurniture.UseAnObject(obj);
+            isVisible = false;
+            spriteContainer.SetActive(isVisible);
+        }
+    }
+
     public void AddObject(SOObject obj)
     {
         objectsList.Add(obj);
-        spriteList.Add(Instantiate(obj.InventoryPrefab, spriteContainer.transform));
+        GameObject gameObject = Instantiate(obj.InventoryPrefab, spriteContainer.transform);
+        gameObject.GetComponent<InventoryIcon>().SetObject(obj);
+        spriteList.Add(gameObject);
     }
 
     public bool HasObject(SOObject obj)
