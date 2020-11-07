@@ -1,0 +1,448 @@
+fileFormatVersion: 2
+guid: 8a1fadb816ae828438e83a4bc0de60c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5204059274993727836
+    second: asstes_page_grand_0
+  - first:
+      213: -3400685484829150885
+    second: asstes_page_grand_1
+  - first:
+      213: -6057573892515248646
+    second: asstes_page_grand_2
+  - first:
+      213: 2115571071200025313
+    second: asstes_page_grand_3
+  - first:
+      213: 3689613447281502264
+    second: asstes_page_grand_4
+  - first:
+      213: -5753800082583606218
+    second: asstes_page_grand_5
+  - first:
+      213: 7945662933845473362
+    second: asstes_page_grand_6
+  - first:
+      213: -8534859697164032066
+    second: asstes_page_grand_7
+  - first:
+      213: -8414263439186451389
+    second: asstes_page_grand_8
+  - first:
+      213: -5862551513780158542
+    second: asstes_page_grand_9
+  - first:
+      213: 1420056816084876343
+    second: asstes_page_grand_10
+  - first:
+      213: 8428494701503394004
+    second: asstes_page_grand_11
+  - first:
+      213: -7827381928136947568
+    second: asstes_page_grand_12
+  - first:
+      213: -2741474765926943889
+    second: asstes_page_grand_13
+  - first:
+      213: -2156951213586384996
+    second: asstes_page_grand_14
+  - first:
+      213: -7128499262722964396
+    second: asstes_page_grand_15
+  - first:
+      213: -1754749904006801863
+    second: asstes_page_grand_16
+  - first:
+      213: 5705429209581380229
+    second: asstes_page_grand_17
+  - first:
+      213: 8240687460914464205
+    second: asstes_page_grand_18
+  - first:
+      213: -8178557400241039501
+    second: asstes_page_grand_19
+  - first:
+      213: 3897027027518233414
+    second: asstes_page_grand_20
+  - first:
+      213: 1824699089840105411
+    second: asstes_page_grand_21
+  - first:
+      213: 5877064899880706648
+    second: asstes_page_grand_22
+  - first:
+      213: 713466413844681237
+    second: asstes_page_grand_23
+  - first:
+      213: 902653058073036315
+    second: asstes_page_grand_24
+  - first:
+      213: 8317337734311659985
+    second: asstes_page_grand_25
+  - first:
+      213: -6086670449705730048
+    second: asstes_page_grand_26
+  - first:
+      213: 1968397324413401132
+    second: asstes_page_grand_27
+  - first:
+      213: -5556125583548917688
+    second: asstes_page_grand_28
+  - first:
+      213: 7560372909545329534
+    second: asstes_page_grand_29
+  - first:
+      213: -404543244425427826
+    second: asstes_page_grand_30
+  - first:
+      213: 3764907982302928911
+    second: asstes_page_grand_31
+  - first:
+      213: 7770983039818688121
+    second: asstes_page_grand_32
+  - first:
+      213: -2124351046959043542
+    second: asstes_page_grand_33
+  - first:
+      213: 2434825509640169322
+    second: asstes_page_grand_34
+  - first:
+      213: 7106603596036603815
+    second: asstes_page_grand_35
+  - first:
+      213: 1160586373778064040
+    second: asstes_page_grand_36
+  - first:
+      213: 5700003696912859425
+    second: asstes_page_grand_37
+  - first:
+      213: 3322099881652046943
+    second: asstes_page_grand_38
+  - first:
+      213: -1029208758056652408
+    second: asstes_page_grand_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: asstes_page_grand_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59f31c9658883840800000000000000
+      internalID: 5204059274993727836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b517ee3b1965ec0d0800000000000000
+      internalID: -3400685484829150885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5c2ff93ac2feba0800000000000000
+      internalID: -6057573892515248646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea58f33ea40c5d10800000000000000
+      internalID: 2115571071200025313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838e7b3c1e3243330800000000000000
+      internalID: 3689613447281502264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cadf05f456620b0800000000000000
+      internalID: -5753800082583606218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258f8d4275aa44e60800000000000000
+      internalID: 7945662933845473362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb76db633561e8980800000000000000
+      internalID: -8534859697164032066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3442cb49bf78a3b80800000000000000
+      internalID: -8414263439186451389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_page_grand_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf74b7957804aea0800000000000000
+      internalID: -5862551513780158542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
