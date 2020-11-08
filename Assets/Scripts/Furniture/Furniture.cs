@@ -7,28 +7,38 @@ public class Furniture : MonoBehaviour
 {
     protected PlayerManager playerManager;
     protected PlayerInventory player = null;
+    protected TextManager textManager = null;
     private AudioSource audioSource;
     [SerializeField] private AudioClip audioClipOpen;
     [SerializeField] private AudioClip audioClipUseObject;
 
     void Start()
     {
-        player = FindObjectOfType<PlayerInventory>();
         playerManager = FindObjectOfType<PlayerManager>();
+        player = FindObjectOfType<PlayerInventory>();
+        textManager = FindObjectOfType<TextManager>();
         audioSource = GetComponent<AudioSource>();
     }
 
     public virtual void OpenFurniture()
     {
-        if (audioSource)
+    }
+
+    public virtual void UseAnObject(SOObject obj)
+    {
+    }
+
+    public void OpenFurnitureSound()
+    {
+        if (audioSource && audioClipOpen)
         {
             audioSource.PlayOneShot(audioClipOpen);
         }
     }
 
-    public virtual void UseAnObject(SOObject obj)
+    public void UseAnObjectSound(SOObject obj)
     {
-        if (audioSource)
+        if (audioSource && audioClipUseObject)
         {
             audioSource.PlayOneShot(audioClipUseObject);
         }

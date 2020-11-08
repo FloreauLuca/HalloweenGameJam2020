@@ -14,7 +14,7 @@ public class StorageDoor : Door
     {
         if (locked)
         {
-            Debug.Log("You need a " + keyObject.Name);
+            textManager.DisplayText("You need a " + keyObject.Name + " to open the door.");
         }
     }
 
@@ -26,7 +26,7 @@ public class StorageDoor : Door
             player.RemoveObject(obj);
             OpenDoor();
             spriteRenderer.sprite = goalSprite;
-            Debug.Log("Container open");
+            textManager.DisplayText("Door unlocked");
         }
     }
 }

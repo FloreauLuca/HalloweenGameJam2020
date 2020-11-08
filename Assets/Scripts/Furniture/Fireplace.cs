@@ -15,6 +15,18 @@ public class Fireplace : QuestFurniture
         gameManager = FindObjectOfType<GameManager>();
     }
 
+    public override void OpenFurniture()
+    {
+        if (!used)
+        {
+            textManager.DisplayText("You need a " + requestObject.Name);
+        }
+        if (used && !burned)
+        {
+            textManager.DisplayText("You can put a " + letter.Name);
+        }
+    }
+
     public override void UseAnObject(SOObject obj)
     {
         if (!used && obj.Name == requestObject.Name)
@@ -27,7 +39,7 @@ public class Fireplace : QuestFurniture
         {
             burned = true;
             gameManager.Validate(true);
-            Debug.Log("Goal validate");
+            textManager.DisplayText("One Goal validate");
             player.RemoveObject(obj);
         }
     }

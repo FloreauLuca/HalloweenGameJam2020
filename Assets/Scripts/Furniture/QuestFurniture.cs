@@ -9,7 +9,7 @@ public class QuestFurniture : Furniture
 
     public override void OpenFurniture()
     {
-        Debug.Log("No object here.");
+        textManager.DisplayText("You need a " + requestObject.Name);
     }
 
     public override void UseAnObject(SOObject obj)
@@ -17,7 +17,6 @@ public class QuestFurniture : Furniture
         if (!used && obj.Name == requestObject.Name)
         {
             used = true;
-            Debug.Log("Something is happening");
             player.RemoveObject(obj);
         }
     }

@@ -13,16 +13,15 @@ public class Container : Furniture
         {
             player.AddObject(objectContained);
             containObject = false;
-            Debug.Log(objectContained.Name + " found.");
+            textManager.DisplayText(objectContained.Name + " found.");
         }
         else
         {
-            Debug.Log(objectContained.Name + " already found.");
+            textManager.DisplayText(objectContained.Name + " already found.");
         }
     }
 
     public override void UseAnObject(SOObject obj)
     {
-        Debug.Log("No object can be use");
     }
 }

@@ -7,11 +7,6 @@ public class Library : QuestFurniture
 {
     [SerializeField] private Door door;
 
-    public override void OpenFurniture()
-    {
-        Debug.Log("No object here.");
-    }
-
     public override void UseAnObject(SOObject obj)
     {
         if (!used && obj.Name == requestObject.Name)
@@ -19,6 +14,7 @@ public class Library : QuestFurniture
             used = true;
             door.OpenDoor();
             player.RemoveObject(obj);
+            textManager.DisplayText("Secret door open");
         }
     }
 }

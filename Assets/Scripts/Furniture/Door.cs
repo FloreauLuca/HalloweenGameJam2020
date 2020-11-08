@@ -12,7 +12,7 @@ public class Door : Furniture
     {
         if (!isOpen)
         {
-            Debug.Log("Secret Door close.");
+            textManager.DisplayText("Secret Door close.");
         }
     }
     public void OpenDoor()

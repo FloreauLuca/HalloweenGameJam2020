@@ -15,9 +15,6 @@ public class HideFurniture : Furniture
  
     public override void OpenFurniture()
     {
-        Debug.Log("No place to hide.");
-        
-      
         if (isHidden)
         {
             _animator.SetBool("isHidden", false);
