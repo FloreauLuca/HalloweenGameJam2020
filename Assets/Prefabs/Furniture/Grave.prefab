@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 42467395180703137}
   - component: {fileID: 5190097784929370832}
-  - component: {fileID: 6523589389214856434}
+  - component: {fileID: 750294093038575782}
   m_Layer: 0
   m_Name: Grave
   m_TagString: Untagged
@@ -141,7 +141,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &6523589389214856434
+--- !u!114 &750294093038575782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8748663768489048895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 693117e64ba1c1b45bf1f390d8273321, type: 3}
+  m_Script: {fileID: 11500000, guid: 2af3a5581662e7d47acc6127e5f7c966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   requestObject: {fileID: 11400000, guid: 450e774f52ea60047a3f61cb2586972d, type: 2}
+  crucifix: 1
+  spriteRenderer: {fileID: 3878456405395021789}
+  goalSprite: {fileID: 1906597160599685089, guid: d5151276da145e646a32aeeb45a52fdf, type: 3}

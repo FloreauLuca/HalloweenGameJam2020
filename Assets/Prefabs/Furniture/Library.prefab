@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5949693689079752080}
   - component: {fileID: 1873989279876811489}
-  - component: {fileID: 2780179388213652690}
+  - component: {fileID: 507454065707435679}
   m_Layer: 0
   m_Name: Library
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &2780179388213652690
+--- !u!114 &507454065707435679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,10 +68,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3129489804739080974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 693117e64ba1c1b45bf1f390d8273321, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bbdb03b3d9038c4ba2b9f605c27e8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   requestObject: {fileID: 11400000, guid: aaa91977048fed547be59a435cbbdc61, type: 2}
+  door: {fileID: 0}
 --- !u!1 &6122291001157013335
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +144,7 @@ SpriteRenderer:
   m_SortingLayerID: -17466567
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9107546787665307055, guid: 7e48e3c9d43c23b489201cc42ca6e78d, type: 3}
+  m_Sprite: {fileID: -3748111652701226278, guid: d5151276da145e646a32aeeb45a52fdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

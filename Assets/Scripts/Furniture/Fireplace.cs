@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoalFurniture : QuestFurniture
+public class Fireplace : QuestFurniture
 {
     private GameManager gameManager;
-    [SerializeField] private bool crucifix;
+    [SerializeField] private GameObject fire;
+    [SerializeField] protected SOObject letter;
+    protected bool burned = false;
 
     void Start()
     {
         player = FindObjectOfType<PlayerInventory>();
-        gameManager = FindObjectOfType<GameManager>();   
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public override void UseAnObject(SOObject obj)
@@ -18,7 +20,13 @@ public class GoalFurniture : QuestFurniture
         if (!used && obj.Name == requestObject.Name)
         {
             used = true;
-            gameManager.Validate(crucifix);
+            fire.SetActive(true);
+            player.RemoveObject(obj);
+        }
+        if (used && !burned && obj.Name == letter.Name)
+        {
+            burned = true;
+            gameManager.Validate(true);
             Debug.Log("Goal validate");
             player.RemoveObject(obj);
         }
