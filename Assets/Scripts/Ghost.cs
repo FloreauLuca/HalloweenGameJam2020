@@ -13,6 +13,9 @@ public class Ghost : MonoBehaviour
     [SerializeField] private Rigidbody2D ghostRigidbody2D;
     [SerializeField] private WaypointManager waypointManager;
 
+    public Waypoint floorWaypointContainingPlayer;
+    public Waypoint waypointContainingPlayer;
+
     private Waypoint targetWaypoint;
     enum GhostBehaviour
     {
