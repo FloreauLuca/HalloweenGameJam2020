@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class Ghost : MonoBehaviour
@@ -41,9 +42,11 @@ public class Ghost : MonoBehaviour
     private bool isWaypointDown;
     private bool isWaypointLeft;
     private bool hasVisitedOtherSide;
+    private bool playingDeathSound;
 
     private void Start()
     {
+        playingDeathSound = false;
         ghostBehaviour = GhostBehaviour.SLEEPING;
         if (ghostSpawnerWaypoint.transform.position.x < stairsWaypoint.transform.position.x)
         {
@@ -200,8 +203,22 @@ public class Ghost : MonoBehaviour
                 {
                     //Death
                     //death.Play();
-                    ghostBehaviour = GhostBehaviour.DISAPEARING;
+                    ghostBehaviour = GhostBehaviour.GAME_OVER;
                 }
+                break;
+            case GhostBehaviour.GAME_OVER:
+
+                SceneManager.LoadScene("GameOver");
+                /*if (!playingDeathSound)
+                {
+                    death.Play();
+                    playingDeathSound = true;
+                }
+
+                if (death.isPlaying == false)
+                {
+                    SceneManager.LoadScene("SebScene");
+                }*/
                 break;
         }
     }

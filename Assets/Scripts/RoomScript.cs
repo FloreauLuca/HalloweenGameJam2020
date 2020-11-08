@@ -11,11 +11,18 @@ public class RoomScript : MonoBehaviour
     [SerializeField] private bool containsPlayer = false;
     [SerializeField] private bool containsGhost = false;
 
+    private bool attacking = false;
+
+    void Start()
+    {
+        attacking = false;
+    }
     void Update()
     {
-        if (containsPlayer && containsGhost /*&& !playerhidden*/ && ghost.ghostBehaviour != Ghost.GhostBehaviour.ATTACKING)
+        if (containsPlayer && containsGhost /*&& !playerhidden*/ && !attacking)
         {
             ghost.ghostBehaviour = Ghost.GhostBehaviour.ATTACKING;
+            attacking = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collider2D)
