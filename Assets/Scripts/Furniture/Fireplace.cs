@@ -9,9 +9,8 @@ public class Fireplace : QuestFurniture
     [SerializeField] protected SOObject letter;
     protected bool burned = false;
 
-    void Start()
+    void Awake()
     {
-        player = FindObjectOfType<PlayerInventory>();
         gameManager = FindObjectOfType<GameManager>();
     }
 

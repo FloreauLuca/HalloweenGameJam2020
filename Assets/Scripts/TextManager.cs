@@ -11,6 +11,10 @@ public class TextManager : MonoBehaviour
     [SerializeField] private float duration;
     private float timer;
 
+    void Start() {
+        panel.SetActive(false);
+    }
+
     void Update() {
         if (timer > duration)
         {

@@ -261,4 +261,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMesh: {fileID: 3343440128497261524}
   panel: {fileID: 3343440128811722630}
-  duration: 5
+  duration: 3

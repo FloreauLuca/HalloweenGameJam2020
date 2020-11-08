@@ -43,8 +43,9 @@ public class PlayerManager : MonoBehaviour
     }
     public void Hide(bool isHide)
     {
+        Animator.SetFloat("Speed",0.0f);
         Animator.SetBool("isOpen", isHide);
-
+        isHidden = isHide;
     }
 
 

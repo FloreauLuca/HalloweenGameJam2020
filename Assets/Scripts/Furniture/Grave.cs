@@ -8,9 +8,8 @@ public class Grave : QuestFurniture
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite goalSprite;
 
-    void Start()
+    void Awake()
     {
-        player = FindObjectOfType<PlayerInventory>();
         gameManager = FindObjectOfType<GameManager>();   
     }
 
