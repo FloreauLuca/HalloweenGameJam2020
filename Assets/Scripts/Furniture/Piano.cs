@@ -13,6 +13,7 @@ public class Piano : LockedContainer
         {
             locked = false;
             player.RemoveObject(obj);
+            OpenFurniture();
             spriteRenderer.sprite = goalSprite;
         }
     }

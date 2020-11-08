@@ -25,6 +25,7 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetButtonDown("Open") && reachableFurniture != null)
         {
             reachableFurniture.OpenFurniture();
+            reachableFurniture.OpenFurnitureSound();
         }
         if (Input.GetButtonDown("Inventory"))
         {
@@ -46,6 +47,7 @@ public class PlayerInventory : MonoBehaviour
         if (reachableFurniture != null)
         {
             reachableFurniture.UseAnObject(obj);
+            reachableFurniture.UseAnObjectSound(obj);
             isVisible = false;
             spriteContainer.SetActive(isVisible);
         }

@@ -37,7 +37,7 @@ public class Fireplace : QuestFurniture
         if (used && !burned && obj.Name == letter.Name)
         {
             burned = true;
-            gameManager.Validate(true);
+            gameManager.Validate(false);
             textManager.DisplayText("One Goal validate");
             player.RemoveObject(obj);
         }
