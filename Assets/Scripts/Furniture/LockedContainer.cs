@@ -31,7 +31,6 @@ public class LockedContainer : Container
             locked = false;
             player.RemoveObject(obj);
             OpenFurniture();
-            textManager.DisplayText("Container open");
         }
     }
 }

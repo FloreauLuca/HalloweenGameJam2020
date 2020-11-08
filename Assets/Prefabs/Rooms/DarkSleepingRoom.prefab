@@ -688,7 +688,6 @@ Transform:
   - {fileID: 7549909810490809015}
   - {fileID: 7987969225828790490}
   - {fileID: 5211635274423060005}
-  - {fileID: 761759194272247148}
   - {fileID: 278301841171188427}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1534,7 +1533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4505926902979879119, guid: c81b2926be5a2ec40af99bc1eceb4b7c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4505926902979879119, guid: c81b2926be5a2ec40af99bc1eceb4b7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1644,66 +1643,4 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
   m_PrefabInstance: {fileID: 5592662717228864006}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &9070710212995020587
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 7549909810300747444}
-    m_Modifications:
-    - target: {fileID: 6356547814953271478, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_Name
-      value: DarkDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.5874946
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.15288162
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
---- !u!4 &761759194272247148 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8607483977771473479, guid: 150cb55a3ed1b9845b82c3a9e2559292, type: 3}
-  m_PrefabInstance: {fileID: 9070710212995020587}
   m_PrefabAsset: {fileID: 0}

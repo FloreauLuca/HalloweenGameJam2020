@@ -29,6 +29,6 @@ public class StairsFurniture : QuestFurniture
         }
         stairs.transform.localPosition = endPosition;
         ropeSprite.SetActive(false);
-        this.enabled = false;
+        GetComponent<Collider2D>().enabled = false;
     }
 }

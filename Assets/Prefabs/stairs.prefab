@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8064923813239603017}
   - component: {fileID: 8064923813239603016}
   - component: {fileID: 8064923813239603019}
-  - component: {fileID: 8064923813239603030}
   - component: {fileID: 8064923813239603028}
   - component: {fileID: 8064923813239603029}
   m_Layer: 0
@@ -102,8 +101,8 @@ BoxCollider2D:
   m_Offset: {x: 0.016116291, y: 0.80660295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0666667, y: 2.1333334}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -112,18 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.80660325, y: 1.6132059}
   m_EdgeRadius: 0
---- !u!114 &8064923813239603030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8064923813239603018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212c2e74c3cd05b41be82a08dad68ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &8064923813239603028
 Animator:
   serializedVersion: 3
@@ -155,5 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db4a76d067103548a9704cea81dd6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 0}
   endTransform: {fileID: 0}
   Climb: {fileID: 7400000, guid: 6daf5e9bc5a6d4e4aad9a401207b0f54, type: 2}
