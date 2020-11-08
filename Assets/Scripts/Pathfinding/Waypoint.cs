@@ -22,7 +22,6 @@ public class Waypoint : MonoBehaviour
 
     [SerializeField] private List<Waypoint> neighbours;
 
-    [SerializeField] public bool containsPlayer = false;
 
     // [SerializeField] private float waypointGizmoRadius;
 

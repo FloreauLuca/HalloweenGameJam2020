@@ -6,11 +6,23 @@ public class RoomScript : MonoBehaviour
 {
     [SerializeField] private Waypoint roomWaypoint;
     [SerializeField] private Ghost ghost;
+
+
+    [SerializeField] private bool containsPlayer = false;
+    [SerializeField] private bool containsGhost = false;
+
+    void Update()
+    {
+        if (containsPlayer && containsGhost /*&& !playerhidden*/ && ghost.ghostBehaviour != Ghost.GhostBehaviour.ATTACKING)
+        {
+            ghost.ghostBehaviour = Ghost.GhostBehaviour.ATTACKING;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
         if (collider2D.tag == "Player")
         {
-            roomWaypoint.containsPlayer = true;
+            containsPlayer = true;
             ghost.waypointContainingPlayer = roomWaypoint;
             ghost.floorWaypointContainingPlayer = roomWaypoint.floorWaypoint;
             Debug.Log("In");
@@ -18,7 +30,7 @@ public class RoomScript : MonoBehaviour
 
         if (collider2D.tag == "Ghost")
         {
-
+            containsGhost = true;
         }
     }
 
@@ -26,8 +38,12 @@ public class RoomScript : MonoBehaviour
     {
         if (collider2D.tag == "Player")
         {
-            roomWaypoint.containsPlayer = false;
+            containsPlayer = false;
             Debug.Log("Out");
+        }
+        if (collider2D.tag == "Ghost")
+        {
+            containsGhost = false;
         }
     }
 }

@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Random = UnityEngine.Random;
 
 public class Ghost : MonoBehaviour
 {
     [SerializeField] private Waypoint ghostSpawnerWaypoint;
     [SerializeField] private Waypoint stairsWaypoint;
     [SerializeField] private float speed;
+    [SerializeField] private float rushSpeed;
+    [SerializeField] private float deathDistance = 0.2f;
     [SerializeField] private TimeManager timeManager;
     [SerializeField] private GameObject ghostSprite;
     [SerializeField] private Rigidbody2D ghostRigidbody2D;
     [SerializeField] private WaypointManager waypointManager;
+    [SerializeField] private GameObject player;
+    [SerializeField] private AudioSource death;
 
     public Waypoint floorWaypointContainingPlayer;
     public Waypoint waypointContainingPlayer;
 
     private Waypoint targetWaypoint;
-    enum GhostBehaviour
+    public enum GhostBehaviour
     {
         SLEEPING,
         GOING_TO_STAIRS,
@@ -29,7 +35,7 @@ public class Ghost : MonoBehaviour
         DISAPEARING
     }
 
-    private GhostBehaviour ghostBehaviour;
+    public GhostBehaviour ghostBehaviour;
 
     private bool spawnIsLeft;
     private bool isWaypointDown;
@@ -189,6 +195,13 @@ public class Ghost : MonoBehaviour
                 }
                 break;
             case GhostBehaviour.ATTACKING:
+                ghostRigidbody2D.velocity = (player.transform.position - transform.position).normalized * rushSpeed;
+                if (Vector2.Distance(player.transform.position, transform.position) < deathDistance)
+                {
+                    //Death
+                    //death.Play();
+                    ghostBehaviour = GhostBehaviour.DISAPEARING;
+                }
                 break;
         }
     }
