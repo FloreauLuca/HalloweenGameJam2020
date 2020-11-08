@@ -15,10 +15,12 @@ public class Furniture : MonoBehaviour
 
     public virtual void OpenFurniture()
     {
+
     }
 
     public virtual void UseAnObject(SOObject obj)
     {
+
     }
 
     void OnTriggerEnter2D(Collider2D other) {
