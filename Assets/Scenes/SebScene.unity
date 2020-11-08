@@ -2444,6 +2444,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3395035191921990998, guid: db917e3a9cb3de34a9c0bbfe08a393b4, type: 3}
   m_PrefabInstance: {fileID: 553856291}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &563787788 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1374235247, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+  m_PrefabInstance: {fileID: 2152780619755370928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &623072633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9250,14 +9255,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1374235247, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374235247, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374235247, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2152780618445985765, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: breath
+      value: 
+      objectReference: {fileID: 563787788}
+    - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1049863271}
+    - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: breath1
+      value: 
+      objectReference: {fileID: 8300000, guid: f8b6461ad5c6b0e47a8a6f08e729774f, type: 3}
+    - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: breath2
+      value: 
+      objectReference: {fileID: 8300000, guid: f179ba68aeec4304ca179669a6a7bb10, type: 3}
     - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
       propertyPath: timeManager
       value: 
