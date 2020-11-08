@@ -6,6 +6,7 @@ public class RoomScript : MonoBehaviour
 {
     [SerializeField] private Waypoint roomWaypoint;
     [SerializeField] private Ghost ghost;
+    [SerializeField] private PlayerManager playerManager;
 
 
     [SerializeField] private bool containsPlayer = false;
@@ -16,10 +17,11 @@ public class RoomScript : MonoBehaviour
     void Start()
     {
         attacking = false;
+        playerManager = FindObjectOfType<PlayerManager>();
     }
     void Update()
     {
-        if (containsPlayer && containsGhost /*&& !playerhidden*/ && !attacking)
+        if (containsPlayer && containsGhost && !playerManager.isHidden && !attacking)
         {
             ghost.ghostBehaviour = Ghost.GhostBehaviour.ATTACKING;
             attacking = true;
