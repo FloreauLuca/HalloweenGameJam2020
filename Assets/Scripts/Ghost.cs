@@ -201,7 +201,7 @@ public class Ghost : MonoBehaviour
                 break;
             case GhostBehaviour.ATTACKING:
                 ghostRigidbody2D.velocity = (new Vector3(player.transform.position.x, player.transform.position.y + 1.25f, player.transform.position.z) - transform.position).normalized * rushSpeed;
-                if (Vector2.Distance(player.transform.position, transform.position) < deathDistance)
+                if (Vector2.Distance(new Vector3(player.transform.position.x, player.transform.position.y + 1.25f, player.transform.position.z), transform.position) < deathDistance)
                 {
                     //Death
                     //death.Play();
