@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 24e4172d923dcb343902d113cbf319e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6306355222427423794
+    second: _onts_0
+  - first:
+      213: 1476426968886856663
+    second: _onts_1
+  - first:
+      213: 319895308500603918
+    second: _onts_2
+  - first:
+      213: 4734266548596330309
+    second: _onts_3
+  - first:
+      213: -7494220048598906442
+    second: _onts_4
+  - first:
+      213: -6033992127769064729
+    second: _onts_5
+  - first:
+      213: 6976019087512670957
+    second: _onts_6
+  - first:
+      213: 6201440380086316202
+    second: _onts_7
+  - first:
+      213: -2019086456185880062
+    second: _onts_8
+  - first:
+      213: -5201828438378328168
+    second: _onts_9
+  - first:
+      213: 1227188052249888429
+    second: _onts_10
+  - first:
+      213: 4702050409055863934
+    second: _onts_11
+  - first:
+      213: -7123867959929692618
+    second: _onts_12
+  - first:
+      213: -8432365160025582761
+    second: _onts_13
+  - first:
+      213: -8162593016206620782
+    second: _onts_14
+  - first:
+      213: -742901940630127119
+    second: _onts_15
+  - first:
+      213: 8320921036592873329
+    second: _onts_16
+  - first:
+      213: 1773910802312505602
+    second: _onts_17
+  - first:
+      213: 1204692538868312066
+    second: _onts_18
+  - first:
+      213: 4024820358099007332
+    second: _onts_19
+  - first:
+      213: 8631388128521701110
+    second: _onts_20
+  - first:
+      213: 3992192140140923242
+    second: _onts_21
+  - first:
+      213: 7407507723849754120
+    second: _onts_22
+  - first:
+      213: 2603765274682276246
+    second: _onts_23
+  - first:
+      213: 6356712524259805442
+    second: _onts_24
+  - first:
+      213: -1430166679357252054
+    second: _onts_25
+  - first:
+      213: 2367901588770413971
+    second: _onts_26
+  - first:
+      213: 8679516097439376640
+    second: _onts_27
+  - first:
+      213: -2066844776784495461
+    second: _onts_28
+  - first:
+      213: 3543089552568747360
+    second: _onts_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _onts_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 615
+        width: 505
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234573c89aca48750800000000000000
+      internalID: 6306355222427423794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
