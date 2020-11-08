@@ -1,39 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Stairs : Furniture
 {
-    [SerializeField] Transform endPosition;
-    bool isStairs = false;
+    [SerializeField] Transform endTransform;
+
+    public AnimationClip Climb;
     protected bool used = false;
-    private Animator _animator;
-
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
-
     public override void OpenFurniture()
     {
-        Debug.Log("There's no stairs");
+        playerManager.Animator.SetBool("isOpen", true);
+        Invoke(nameof(ClimbDown), Climb.length);
+    }
 
-
-        if (isStairs)
-        {
-            _animator.SetBool("isStairs", false);
-            isStairs = false;
-            player.GetComponentInChildren<PlayerManager>().Hide(false); 
-            player.GetComponentInChildren<PlayerManager>().enabled = true;
-            Debug.Log("Not going through the stairs");
-        }
-        else
-        {
-            _animator.SetBool("isStairs", true);
-            isStairs = true;
-            player.GetComponentInChildren<PlayerManager>().Hide(true);
-            player.GetComponentInChildren<PlayerManager>().enabled = false;
-            Debug.Log("Take the stairs");
-        }
+    private void ClimbDown()
+    {
+        player.transform.position = endTransform.position;
+        playerManager.Animator.SetBool("isOpen", false);
     }
 }

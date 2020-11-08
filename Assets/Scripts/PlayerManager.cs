@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     public float Speed;
     public bool isHidden;
 
-    private Animator _animator;
+    public Animator Animator;
     public SpriteRenderer _spriteRenderer;
     internal bool IsHidden;
 
@@ -15,7 +15,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -35,15 +35,15 @@ public class PlayerManager : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        _animator.SetFloat("Speed", Mathf.Abs(horizontal));
-        _animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
-        _animator.SetBool("isInventory", Input.GetKey(KeyCode.E) && horizontal == 0);
+        Animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        Animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
+        Animator.SetBool("isInventory", Input.GetKey(KeyCode.E) && horizontal == 0);
         //_animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
 
     }
     public void Hide(bool isHide)
     {
-        _animator.SetBool("isOpen", isHide);
+        Animator.SetBool("isOpen", isHide);
 
     }
 
