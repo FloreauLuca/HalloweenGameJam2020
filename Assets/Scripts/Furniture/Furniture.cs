@@ -14,6 +14,7 @@ public class Furniture : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerInventory>();
+        playerManager = FindObjectOfType<PlayerManager>();
         audioSource = GetComponent<AudioSource>();
     }
 
