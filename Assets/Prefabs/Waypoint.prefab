@@ -44,7 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2848cb45960f1e4da47ac97b167eb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
+  up: {fileID: 0}
+  down: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  floorWaypoint: {fileID: 0}
   neighbours: []
+  containsPlayer: 0
 --- !u!1 &2374875321321244513
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,8 +120,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 339046587
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8dd62c6cd3fce834d9ffcdc5b86a2970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
