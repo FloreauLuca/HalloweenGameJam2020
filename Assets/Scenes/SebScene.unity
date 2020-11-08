@@ -393,8 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 0
-  time1Hour: 1
-  time13thHour: 20
+  time1Hour: 4
+  time13thHour: 40
   filter13: {fileID: 203749667}
 --- !u!4 &50092629
 Transform:
@@ -8588,9 +8588,17 @@ PrefabInstance:
       value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1049863271}
+    - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
+      propertyPath: rushSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2152780618445985766, guid: 84b1b85e5d1d7ae4bbdd31dc33f49478, type: 3}
       propertyPath: timeManager
       value: 
