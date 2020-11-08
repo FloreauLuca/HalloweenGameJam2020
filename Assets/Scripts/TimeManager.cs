@@ -8,12 +8,29 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private int gameTime = 0;
     private float currentTime;
 
-    [SerializeField] private float Time1Hour = 5;
-    [SerializeField] private float Time13thHour = 30;
+    [SerializeField] private float time1Hour = 5;
+    [SerializeField] private float time13thHour = 30;
+
+    [SerializeField] private GameObject filter13;
 
     public int GameTime
     {
         get { return gameTime; }
+    }
+
+    public float CurrentTime
+    {
+        get { return currentTime; }
+    }
+
+    public float Time1Hour
+    {
+        get { return time1Hour; }
+    }
+
+    public float Time13thHour
+    {
+        get { return time13thHour; }
     }
 
     void Start()
@@ -26,6 +43,7 @@ public class TimeManager : MonoBehaviour
         currentTime += Time.deltaTime;
         if (gameTime >= 13)
         {
+            filter13.SetActive(true);
             if (currentTime > Time13thHour)
             {
                 gameTime = 0;
@@ -34,7 +52,7 @@ public class TimeManager : MonoBehaviour
         }
         else
         {
-            
+            filter13.SetActive(false);
             if (currentTime > Time1Hour)
             {
                 gameTime += 1;

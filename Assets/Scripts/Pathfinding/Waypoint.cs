@@ -18,7 +18,11 @@ public class Waypoint : MonoBehaviour
     [SerializeField] public Waypoint left;
     [SerializeField] public Waypoint right;
 
+    [SerializeField] public Waypoint floorWaypoint;
+
     [SerializeField] private List<Waypoint> neighbours;
+
+    [SerializeField] public bool containsPlayer = false;
 
     // [SerializeField] private float waypointGizmoRadius;
 
