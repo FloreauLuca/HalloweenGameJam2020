@@ -1,23 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class Ghost : MonoBehaviour
 {
     [SerializeField] private Waypoint ghostSpawnerWaypoint;
     [SerializeField] private Waypoint stairsWaypoint;
     [SerializeField] private float speed;
+    [SerializeField] private float rushSpeed;
+    [SerializeField] private float deathDistance = 0.2f;
     [SerializeField] private TimeManager timeManager;
     [SerializeField] private GameObject ghostSprite;
     [SerializeField] private Rigidbody2D ghostRigidbody2D;
     [SerializeField] private WaypointManager waypointManager;
+    [SerializeField] private GameObject player;
+    [SerializeField] private AudioSource death;
 
     public Waypoint floorWaypointContainingPlayer;
     public Waypoint waypointContainingPlayer;
 
     private Waypoint targetWaypoint;
-    enum GhostBehaviour
+    public enum GhostBehaviour
     {
         SLEEPING,
         GOING_TO_STAIRS,
@@ -29,15 +36,17 @@ public class Ghost : MonoBehaviour
         DISAPEARING
     }
 
-    private GhostBehaviour ghostBehaviour;
+    public GhostBehaviour ghostBehaviour;
 
     private bool spawnIsLeft;
     private bool isWaypointDown;
     private bool isWaypointLeft;
     private bool hasVisitedOtherSide;
+    private bool playingDeathSound;
 
     private void Start()
     {
+        playingDeathSound = false;
         ghostBehaviour = GhostBehaviour.SLEEPING;
         if (ghostSpawnerWaypoint.transform.position.x < stairsWaypoint.transform.position.x)
         {
@@ -189,6 +198,27 @@ public class Ghost : MonoBehaviour
                 }
                 break;
             case GhostBehaviour.ATTACKING:
+                ghostRigidbody2D.velocity = (player.transform.position - transform.position).normalized * rushSpeed;
+                if (Vector2.Distance(player.transform.position, transform.position) < deathDistance)
+                {
+                    //Death
+                    //death.Play();
+                    ghostBehaviour = GhostBehaviour.GAME_OVER;
+                }
+                break;
+            case GhostBehaviour.GAME_OVER:
+
+                SceneManager.LoadScene("GameOver");
+                /*if (!playingDeathSound)
+                {
+                    death.Play();
+                    playingDeathSound = true;
+                }
+
+                if (death.isPlaying == false)
+                {
+                    SceneManager.LoadScene("SebScene");
+                }*/
                 break;
         }
     }

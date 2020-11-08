@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Furniture : MonoBehaviour
 {
+    protected PlayerManager playerManager;
     protected PlayerInventory player = null;
     protected TextManager textManager = null;
     private AudioSource audioSource;
@@ -34,7 +35,8 @@ public class Furniture : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.CompareTag("Player"))
         {
             player.SetReachableFurniture(this);
