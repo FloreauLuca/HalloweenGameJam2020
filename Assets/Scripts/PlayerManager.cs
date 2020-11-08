@@ -37,11 +37,15 @@ public class PlayerManager : MonoBehaviour
         }
         _animator.SetFloat("Speed", Mathf.Abs(horizontal));
         _animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
-        _animator.SetBool("isInventory", Input.GetKey(KeyCode.Q) && horizontal == 0);
-        _animator.SetBool("isOpen", Input.GetKey(KeyCode.W) && horizontal == 0);
-        _animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
- 
+        _animator.SetBool("isInventory", Input.GetKey(KeyCode.E) && horizontal == 0);
+        //_animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
+
+    }
+    public void Hide(bool isHide)
+    {
+        _animator.SetBool("isOpen", isHide);
+
     }
 
-    
+
 }
