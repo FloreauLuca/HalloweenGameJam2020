@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bbdb03b3d9038c4ba2b9f605c27e8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 8300000, guid: 518a14e59ab730448b8ed786b490415d, type: 3}
   requestObject: {fileID: 11400000, guid: aaa91977048fed547be59a435cbbdc61, type: 2}
   door: {fileID: 0}
 --- !u!82 &7178083644263105019
@@ -85,7 +87,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 518a14e59ab730448b8ed786b490415d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

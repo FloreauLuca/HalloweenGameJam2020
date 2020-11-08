@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4b0ef5965245941ace75aae6f22b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 8300000, guid: ee13d4836e2da84409f114995f58fae3, type: 3}
   collider: {fileID: 3347953242429589564}
   keyObject: {fileID: 11400000, guid: 9356fd9305c057940aaf3159850be208, type: 2}
   spriteRenderer: {fileID: 447969405836592403}
@@ -171,7 +173,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ee13d4836e2da84409f114995f58fae3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

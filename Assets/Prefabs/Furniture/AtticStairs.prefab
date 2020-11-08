@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db376232b89a5444880861fe829fc098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 0}
   requestObject: {fileID: 11400000, guid: 352ad6753c7f5dc46b4b4e3f5645e01f, type: 2}
   startPosition: {x: 0, y: 2}
   endPosition: {x: 0, y: 0}
@@ -172,7 +174,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

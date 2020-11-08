@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3001451961270642862}
   - component: {fileID: 8989866716850184096}
   - component: {fileID: 8308707096352954694}
+  - component: {fileID: 1904386372559179794}
   m_Layer: 0
   m_Name: Billard
   m_TagString: Untagged
@@ -72,6 +73,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb435534791bf24f834e3bf1ed8d909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 0}
   objectContained: {fileID: 11400000, guid: 352ad6753c7f5dc46b4b4e3f5645e01f, type: 2}
   keyObject: {fileID: 11400000, guid: 3c42a5857d9eb91449919ec060debd5a, type: 2}
 --- !u!82 &8308707096352954694
@@ -85,7 +88,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b8f20f46673e60e4b9c9c24d522276b4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -170,6 +173,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1904386372559179794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785920930337313089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212c2e74c3cd05b41be82a08dad68ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClipOpen: {fileID: 0}
+  audioClipUseObject: {fileID: 8300000, guid: b8f20f46673e60e4b9c9c24d522276b4, type: 3}
 --- !u!1 &7444534573130968344
 GameObject:
   m_ObjectHideFlags: 0
