@@ -1451,6 +1451,7 @@ Transform:
   - {fileID: 6859294554146685053}
   - {fileID: 6859294555696562543}
   - {fileID: 6499954658329727012}
+  - {fileID: 1863183717743498960}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1536,6 +1537,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2023532469725823731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6859294555924882796}
+    m_Modifications:
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5769435
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483899468103508105, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+      propertyPath: m_Name
+      value: WardRobe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+--- !u!4 &1863183717743498960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 418363862415217699, guid: fc5e5448ce54c3a469cdb28c9cb08c9d, type: 3}
+  m_PrefabInstance: {fileID: 2023532469725823731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3297993535252804394
 PrefabInstance:
   m_ObjectHideFlags: 0
