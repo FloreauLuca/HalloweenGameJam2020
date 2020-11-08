@@ -9,6 +9,8 @@ public class PlayerManager : MonoBehaviour
 
     private Animator _animator;
     public SpriteRenderer _spriteRenderer;
+    internal bool IsHidden;
+
     //private readonly List<IInteractable> _interactables = new List<IInteractable>();
 
     private void Awake()
@@ -33,18 +35,17 @@ public class PlayerManager : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-
         _animator.SetFloat("Speed", Mathf.Abs(horizontal));
         _animator.SetBool("isCrouched", Input.GetKey(KeyCode.LeftControl) && horizontal == 0);
-        _animator.SetBool("isInventory", Input.GetKey(KeyCode.Q) && horizontal == 0);
-        _animator.SetBool("isOpen", Input.GetKey(KeyCode.W) && horizontal == 0);
-        _animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
- 
+        _animator.SetBool("isInventory", Input.GetKey(KeyCode.E) && horizontal == 0);
+        //_animator.SetBool("isItem", Input.GetKey(KeyCode.E) && horizontal == 0);
+
+    }
+    public void Hide(bool isHide)
+    {
+        _animator.SetBool("isOpen", isHide);
+
     }
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        
-    }
 
 }

@@ -21,6 +21,9 @@ public class Ghost : MonoBehaviour
     {
         SLEEPING,
         GOING_TO_STAIRS,
+        GOING_TO_PLAYER_FLOOR,
+        ATTACKING,
+        GAME_OVER,
         GOING_TO_FLOOR,
         VISITING_FLOOR,
         DISAPEARING
@@ -80,11 +83,11 @@ public class Ghost : MonoBehaviour
                     if (transform.position.x >= stairsWaypoint.transform.position.x)
                     {
                         transform.position = stairsWaypoint.transform.position;
-                        int randomFloor = Random.Range(0, waypointManager.floorWaypoints.Count);
+                        //int randomFloor = Random.Range(0, waypointManager.floorWaypoints.Count);
                         ghostRigidbody2D.velocity = Vector2.down * speed;
-                        targetWaypoint = waypointManager.floorWaypoints[randomFloor];
+                        targetWaypoint = floorWaypointContainingPlayer;
                         isWaypointDown = true;
-                        ghostBehaviour = GhostBehaviour.GOING_TO_FLOOR;
+                        ghostBehaviour = GhostBehaviour.GOING_TO_PLAYER_FLOOR;
                     }
                 }
                 else
@@ -168,6 +171,24 @@ public class Ghost : MonoBehaviour
                 ghostRigidbody2D.velocity = Vector2.zero;
                 ghostSprite.SetActive(false);
                 ghostBehaviour = GhostBehaviour.SLEEPING;
+                break;
+            case GhostBehaviour.GOING_TO_PLAYER_FLOOR:
+                if (isWaypointDown)
+                {
+                    if (transform.position.y < targetWaypoint.transform.position.y)
+                    {
+                        SelectRoomWaypoint();
+                    }
+                }
+                else
+                {
+                    if (transform.position.y > targetWaypoint.transform.position.y)
+                    {
+                        SelectRoomWaypoint();
+                    }
+                }
+                break;
+            case GhostBehaviour.ATTACKING:
                 break;
         }
     }
