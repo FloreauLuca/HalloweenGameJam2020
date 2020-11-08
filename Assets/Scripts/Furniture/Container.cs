@@ -23,6 +23,6 @@ public class Container : Furniture
 
     public override void UseAnObject(SOObject obj)
     {
-        Debug.Log("Not object can be use");
+        Debug.Log("No object can be use");
     }
 }
