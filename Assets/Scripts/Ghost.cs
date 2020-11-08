@@ -18,7 +18,10 @@ public class Ghost : MonoBehaviour
     [SerializeField] private Rigidbody2D ghostRigidbody2D;
     [SerializeField] private WaypointManager waypointManager;
     [SerializeField] private GameObject player;
-    [SerializeField] private AudioSource death;
+    [SerializeField] private AudioSource breath;
+    [SerializeField] private AudioClip breath1;
+    [SerializeField] private AudioClip breath2;
+
 
     public Waypoint floorWaypointContainingPlayer;
     public Waypoint waypointContainingPlayer;
@@ -42,11 +45,10 @@ public class Ghost : MonoBehaviour
     private bool isWaypointDown;
     private bool isWaypointLeft;
     private bool hasVisitedOtherSide;
-    private bool playingDeathSound;
+    private bool wasPlayingBreath1;
 
     private void Start()
     {
-        playingDeathSound = false;
         ghostBehaviour = GhostBehaviour.SLEEPING;
         if (ghostSpawnerWaypoint.transform.position.x < stairsWaypoint.transform.position.x)
         {
@@ -221,6 +223,11 @@ public class Ghost : MonoBehaviour
                 }*/
                 break;
         }
+
+        if (ghostBehaviour != GhostBehaviour.DISAPEARING && ghostBehaviour != GhostBehaviour.SLEEPING)
+        {
+            PlayBreath();
+        }
     }
 
     void SelectFloorWaypoint()
@@ -262,6 +269,25 @@ public class Ghost : MonoBehaviour
         }
 
         ghostBehaviour = GhostBehaviour.VISITING_FLOOR;
+    }
+
+    void PlayBreath()
+    {
+        if (!breath.isPlaying)
+        {
+            if (wasPlayingBreath1)
+            {
+                breath.clip = breath1;
+                breath.Play();
+                wasPlayingBreath1 = false;
+            }
+            else
+            {
+                breath.clip = breath2;
+                breath.Play();
+                wasPlayingBreath1 = true;
+            }
+        }
     }
 
     void SelectNextWaypoint()
