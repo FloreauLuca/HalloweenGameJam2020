@@ -13,6 +13,7 @@ public class RoomScript : MonoBehaviour
             roomWaypoint.containsPlayer = true;
             ghost.waypointContainingPlayer = roomWaypoint;
             ghost.floorWaypointContainingPlayer = roomWaypoint.floorWaypoint;
+            Debug.Log("In");
         }
 
         if (collider2D.tag == "Ghost")
@@ -26,6 +27,7 @@ public class RoomScript : MonoBehaviour
         if (collider2D.tag == "Player")
         {
             roomWaypoint.containsPlayer = false;
+            Debug.Log("Out");
         }
     }
 }
