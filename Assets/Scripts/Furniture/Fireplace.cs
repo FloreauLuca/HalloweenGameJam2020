@@ -23,7 +23,7 @@ public class Fireplace : QuestFurniture
             fire.SetActive(true);
             player.RemoveObject(obj);
         }
-        if (!burned && obj.Name == letter.Name)
+        if (used && !burned && obj.Name == letter.Name)
         {
             burned = true;
             gameManager.Validate(true);

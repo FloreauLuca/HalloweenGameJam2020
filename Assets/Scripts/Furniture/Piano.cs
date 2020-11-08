@@ -9,10 +9,9 @@ public class Piano : LockedContainer
 
     public override void UseAnObject(SOObject obj)
     {
-        if (!locked && obj.Name == keyObject.Name)
+        if (locked && obj.Name == keyObject.Name)
         {
             locked = false;
-
             player.RemoveObject(obj);
             spriteRenderer.sprite = goalSprite;
             Debug.Log("Container open");

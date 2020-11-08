@@ -26,10 +26,11 @@ public class LockedContainer : Container
 
     public override void UseAnObject(SOObject obj)
     {
-        if (!locked && obj.Name == keyObject.Name)
+        if (locked && obj.Name == keyObject.Name)
         {
             locked = false;
             player.RemoveObject(obj);
+            OpenFurniture();
             Debug.Log("Container open");
         }
     }
