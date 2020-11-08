@@ -6,11 +6,12 @@ using UnityEngine;
 public class Furniture : MonoBehaviour
 {
     protected PlayerInventory player = null;
+    protected PlayerManager playerManager;
 
     void Start()
     {
         player = FindObjectOfType<PlayerInventory>();
-
+        playerManager = FindObjectOfType<PlayerManager>();
     }
 
     public virtual void OpenFurniture()
