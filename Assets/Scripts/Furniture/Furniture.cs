@@ -14,6 +14,7 @@ public class Furniture : MonoBehaviour
 
     void Start()
     {
+        playerManager = FindObjectOfType<PlayerManager>();
         player = FindObjectOfType<PlayerInventory>();
         textManager = FindObjectOfType<TextManager>();
         audioSource = GetComponent<AudioSource>();
@@ -21,15 +22,23 @@ public class Furniture : MonoBehaviour
 
     public virtual void OpenFurniture()
     {
-        if (audioSource)
+    }
+
+    public virtual void UseAnObject(SOObject obj)
+    {
+    }
+
+    public void OpenFurnitureSound()
+    {
+        if (audioSource && audioClipOpen)
         {
             audioSource.PlayOneShot(audioClipOpen);
         }
     }
 
-    public virtual void UseAnObject(SOObject obj)
+    public void UseAnObjectSound(SOObject obj)
     {
-        if (audioSource)
+        if (audioSource && audioClipUseObject)
         {
             audioSource.PlayOneShot(audioClipUseObject);
         }

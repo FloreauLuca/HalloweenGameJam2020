@@ -13,14 +13,14 @@ public class LockedContainer : Container
         {
             player.AddObject(objectContained);
             containObject = false;
-            Debug.Log(objectContained.Name + " found.");
+            textManager.DisplayText(objectContained.Name + " found.");
         }
         else if (locked)
         {
-            Debug.Log("You need a " + keyObject.Name);
+            textManager.DisplayText("You need a " + keyObject.Name);
         } else
         {
-            Debug.Log(objectContained.Name + " already found.");
+            textManager.DisplayText(objectContained.Name + " already found.");
         }
     }
 
@@ -31,7 +31,7 @@ public class LockedContainer : Container
             locked = false;
             player.RemoveObject(obj);
             OpenFurniture();
-            Debug.Log("Container open");
+            textManager.DisplayText("Container open");
         }
     }
 }

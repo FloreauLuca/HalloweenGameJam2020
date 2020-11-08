@@ -21,7 +21,7 @@ public class Grave : QuestFurniture
             used = true;
             gameManager.Validate(true);
             spriteRenderer.sprite = goalSprite;
-            Debug.Log("Goal validate");
+            textManager.DisplayText("One Goal validate");
             player.RemoveObject(obj);
         }
     }

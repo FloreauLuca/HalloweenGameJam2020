@@ -14,7 +14,6 @@ public class Piano : LockedContainer
             locked = false;
             player.RemoveObject(obj);
             spriteRenderer.sprite = goalSprite;
-            Debug.Log("Container open");
         }
     }
 }
