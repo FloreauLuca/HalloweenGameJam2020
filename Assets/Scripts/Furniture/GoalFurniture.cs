@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoalFurniture : MonoBehaviour
+public class GoalFurniture : QuestFurniture
 {
-    // Start is called before the first frame update
+    private GameManager gameManager;
+    [SerializeField] private bool crucifix;
+
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerInventory>();
+        gameManager = FindObjectOfType<GameManager>();   
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void UseAnObject(SOObject obj)
     {
-        
+        if (!used && obj.Name == requestObject.Name)
+        {
+            used = true;
+            gameManager.Validate(crucifix);
+            Debug.Log("Goal validate");
+            player.RemoveObject(obj);
+        }
     }
 }

@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool crucifixDown;
+    private bool pictureDown;
+
+    public void GameOver()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Win()
     {
-        
+
+    }
+
+    public void Validate(bool crucifix)
+    {
+        if (crucifix)
+        {
+            crucifixDown = true;
+        } else {
+            pictureDown = true;
+        }
+        if (pictureDown && crucifixDown)
+        {
+            Win();
+        }
     }
 }

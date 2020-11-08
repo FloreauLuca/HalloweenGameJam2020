@@ -9,14 +9,14 @@ public class QuestFurniture : Furniture
 
     public override void OpenFurniture()
     {
-        Debug.Log("No object here already found.");
+        Debug.Log("No object here.");
     }
 
     public override void UseAnObject(SOObject obj)
     {
         if (!used && obj.Name == requestObject.Name)
         {
-            used = false;
+            used = true;
             Debug.Log("Something is happening");
             player.RemoveObject(obj);
         }
